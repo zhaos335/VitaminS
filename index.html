@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1 INPUT 1 OUTPUT TEMPLATE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Gaegu&family=Imperial+Script&family=Mea+Culpa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>What do you want to drink today?</h1>
+  <div id="ui">
+    <input type="text" id="charInput" maxlength="1" placeholder="Type A-Z">
+    <button onclick="displayImage()" id="submitButton">Show Image</button>
+    <button onclick="goHome()" id="homeButton">Return Home</button>
+  </div>
+
+  <img id="displayedImage" src="Images/cover.png" class="cover" alt="Displayed Image">
+
+  <script src="script.js"></script>
+</body>
+</html>

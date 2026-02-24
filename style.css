@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #8db998;
+}
+
+h1 {
+  position: relative;
+  z-index: 10;
+
+  color: #8db998; 
+  font-size: 120px;
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+
+  text-shadow: 
+    -2px 2px 0 #533a33;
+}
+/* UI 在最上层 */
+#ui {
+  position: relative;
+  z-index: 10;
+  margin-top: 20px;
+}
+#charInput{color: #8db998;
+    font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+    background-color: #533a33;
+    border-radius: 10em;}
+    
+#submitButton{
+    color: #8db998;
+    font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    background-color: #533a33;
+    border-radius: 10em;
+}
+#homeButton{color: #8db998;
+    font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    background-color: #533a33;
+    border-radius: 10em;}
+
+.cover {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* 普通字母图片：不全屏 */
+#displayedImage:not(.cover) {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 80vw;
+  max-height: 80vh;
+  display: block;
+  margin: 40px auto;
+}
